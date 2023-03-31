@@ -1,19 +1,21 @@
 ## bitcoin-price-prediction
 
-### Overview
-It is a machine learning project aimed at building a predictive model for the future price of Bitcoin using historical data. The project will use the Random Forest Regression algorithm, which is a popular supervised learning algorithm used for regression and classification tasks. The model will be trained on historical data and used to make future predictions on the next 30 days Bitcoin prices.
+### Objective
+The aim of this project is to develop an AR (Autoregressive) model to predict the future price of Bitcoin based on its historical data. The model will be trained on a dataset containing Bitcoin's price and date for each trading day, and it will learn the patterns and trends in the data to predict the price for the next few days or weeks.
 
-### Data 
-The first step in this project is to collect historical data on Bitcoin prices. This data obtained from sources as CSV files. The data include features such as price and date. The historical data will be used to train the Random Forest Regression model.
+### Dataset
+The dataset used for this project will consist of historical data of Bitcoin's price and date for each trading day. The dataset obtained from financial data providers as csv file.
 
-### Model Training
-Once the data has been preprocessed and the relevant features selected, the next step is to train the Random Forest Regression model. The dataset will be split into training and testing sets, with the training set used to train the model. The Random Forest Regression algorithm works by creating multiple decision trees and combining their outputs to make predictions. The model will be trained on historical data and used to make future predictions on Bitcoin prices.
+### Modeling
+The AR model is a statistical model used to predict future values based on past values. It is a time-series model that takes into account the previous values of the same variable to make predictions for the future. In this project, we will use the AR model to predict the future price of Bitcoin based on its past prices.
 
-### Model Evaluation
-The performance of the model will be evaluated using various performance metrics. The testing set will be used to evaluate the performance of the model. These metrics will be used to determine the accuracy and reliability of the model.
+The model will be trained on a training set and validated on a testing set. The data will be preprocessed to remove any missing or inconsistent values, and then the model will be trained using the training set. The model's performance will be evaluated on the testing set using metrics like mean absolute error (MAE).
 
-![output_plotly](https://user-images.githubusercontent.com/84701560/228165465-c6154b23-edab-4f0f-9f24-3903f3e7ae08.png)
+### Visualization
+Once the model is trained and validated, we can visualize the results using graphs and charts. We can plot the actual and predicted Bitcoin prices over time to see how well the model is performing. We can also plot the residuals to check if the model is capturing all the relevant information in the data.
 
-### Model Prediction
-The final step in this project is to deploy the trained model to make future predictions on Bitcoin prices. The model will be used to predict the future prices of Bitcoin based on the historical data used to train the model. These predictions can be used for various applications such as trading and investment decision making.
+![wfv](https://user-images.githubusercontent.com/84701560/229135472-11cddb6a-12d4-4ff8-9e6f-79c98af57162.png)
+
+### Conclusion
+Bitcoin price prediction is a challenging problem due to its highly volatile nature. However, by using the AR model, we can predict Bitcoin's future price with reasonable accuracy based on its past prices. The project will provide insights into the dynamics of Bitcoin's price and can be extended to other cryptocurrencies or financial assets.
 
